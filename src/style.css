@@ -1,0 +1,35 @@
+.display {
+   -fx-background-color: grey;
+}
+
+.text-area {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 25px;
+    -fx-font-family: "Helvetica Neue Light";
+    -fx-background-color: grey;
+}
+
+.button {
+    -fx-background-radius: 0;
+    -fx-background-color: #E0E0E0;
+    -fx-font-family: "Helvetiva Neue Light";
+    -fx-font-size: 18px;
+    -fx-text-align: center;
+}
+
+.button:pressed {
+    -fx-background-color: #b2b2b2;
+    -fx-text-align: center;
+}
+
+.button:hover {
+     -fx-background-color: #b2b2b2;
+     -fx-text-align: center;
+    }
+
+.operators {
+    -fx-background-color: #FE9340;
+    -fx-text-fill: #ffffff;
+}
+
+.invisible

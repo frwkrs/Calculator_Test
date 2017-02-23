@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="280" prefWidth="250.0" stylesheets="style.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+
+
+    <StackPane>
+        <Rectangle fill="TRANSPARENT" height="50" style="-fx-background-color: grey;" styleClass="display" width="300" />
+        <Text fx:id="output" styleClass="text-area" />
+    </StackPane>
+
+    <HBox alignment="CENTER" prefWidth="300.0">
+        <Button alignment="CENTER" onAction="#processAC" prefWidth="50" text="AC" />
+        <Rectangle fill="TRANSPARENT" nodeOrientation="LEFT_TO_RIGHT" stroke="TRANSPARENT" width="200.0" />
+
+    </HBox>
+
+    <HBox alignment="CENTER">
+        <Button contentDisplay="CENTER" onAction="#processNumpad" prefWidth="50" text="7" textAlignment="CENTER" />
+        <Button contentDisplay="CENTER" onAction="#processNumpad" prefWidth="50" text="8" />
+        <Button contentDisplay="CENTER" onAction="#processNumpad" prefWidth="50" text="9" />
+        <Button contentDisplay="CENTER" onAction="#processOperator" prefWidth="50" styleClass="operators" text="/" />
+        <Button contentDisplay="CENTER" onAction="#processRoot" prefWidth="50" styleClass="operators" text="rt" />
+        <cursor>
+            <Cursor fx:constant="S_RESIZE" />
+        </cursor>
+    </HBox>
+
+    <HBox alignment="CENTER">
+        <Button contentDisplay="CENTER" onAction="#processNumpad" prefWidth="50" text="4" textAlignment="CENTER" />
+        <Button contentDisplay="CENTER" onAction="#processNumpad" prefWidth="50" text="5" textAlignment="CENTER" />
+        <Button contentDisplay="CENTER" onAction="#processNumpad" prefWidth="50" text="6" textAlignment="CENTER" />
+        <Button contentDisplay="CENTER" onAction="#processOperator" prefWidth="50" styleClass="operators" text="*" textAlignment="CENTER" />
+        <Button contentDisplay="CENTER" onAction="#processFactor" prefWidth="50" styleClass="operators" text="x!" textAlignment="CENTER" />
+    </HBox>
+
+    <HBox alignment="CENTER">
+        <Button contentDisplay="CENTER" onAction="#processNumpad" prefWidth="50" text="1" textAlignment="CENTER" />
+        <Button contentDisplay="CENTER" onAction="#processNumpad" prefWidth="50" text="2" textAlignment="CENTER" />
+        <Button contentDisplay="CENTER" onAction="#processNumpad" prefWidth="50" text="3" textAlignment="CENTER" />
+        <Button contentDisplay="CENTER" onAction="#processOperator" prefWidth="50" styleClass="operators" text="+" textAlignment="CENTER" />
+        <Button contentDisplay="CENTER" onAction="#processOperator" prefWidth="50" styleClass="operators" text="^" textAlignment="CENTER" />
+
+    </HBox>
+
+    <HBox alignment="CENTER">
+        <Button contentDisplay="CENTER" onAction="#processNumpad" prefWidth="50" text="0" textAlignment="CENTER" />
+        <Button contentDisplay="CENTER" onAction="#processNumpad" prefWidth="50" text="9" textAlignment="CENTER" />
+        <Button contentDisplay="CENTER" onAction="#processOperator" prefWidth="50" text="=" textAlignment="CENTER" />
+        <Button contentDisplay="CENTER" onAction="#processOperator" prefWidth="50" styleClass="operators" text="-" textAlignment="CENTER" />
+        <Button contentDisplay="CENTER" onAction="#processChangeSign" prefWidth="50" styleClass="operators" text="+/-" textAlignment="CENTER" />
+    </HBox>
+</VBox>
