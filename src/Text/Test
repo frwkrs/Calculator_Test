@@ -1,0 +1,12 @@
+\documentclass[a4paper]{article}[24.02.2017]
+\usepackage[german,ngerman]{babel}
+ \usepackage[ansinew]{inputenc}
+ \usepackage[T1]{fontenc}
+
+ \begin{document}
+ \section{Überschrift 1}         %erste Gliederungsebene
+ \label{sec:uberschrift-1}       %label wenn wir später auf diese
+                                %Überschrift verweisen wollen
+ \LaTeXe{}                       %\LaTeXe{} ist ein Befehl der das Logo
+                                %für LaTeX2e ausgibt
+ \end{document}
